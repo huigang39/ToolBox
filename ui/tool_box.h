@@ -12,6 +12,7 @@
 #ifndef TOOL_BOX_H
 #define TOOL_BOX_H
 
+#include "network_share.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -29,6 +30,8 @@ public:
 
 private:
     Ui::ToolBox* ui;
+
+    NetworkShare network_share_;
 };
 
 #endif  // TOOL_BOX_H

@@ -19,7 +19,7 @@ find_package(Qt5 COMPONENTS
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ui)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/plot)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/signal)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/utils)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/utils/network)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/qcustomplot)
 
 file(GLOB_RECURSE SOURCES
@@ -27,7 +27,7 @@ file(GLOB_RECURSE SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/ui/*.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/plot/*.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/signal/*.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/utils/*.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/utils/network/*.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/lib/qcustomplot/*.cpp
 )
 
@@ -35,7 +35,7 @@ file(GLOB_RECURSE HEADERS
         ${CMAKE_CURRENT_SOURCE_DIR}/ui/*.h
         ${CMAKE_CURRENT_SOURCE_DIR}/plot/*.h
         ${CMAKE_CURRENT_SOURCE_DIR}/signal/*.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/utils/*.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/utils/network/*.h
         ${CMAKE_CURRENT_SOURCE_DIR}/lib/qcustomplot/*.h
 )
 

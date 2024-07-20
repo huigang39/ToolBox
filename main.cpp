@@ -13,8 +13,8 @@
 #include <QApplication>
 
 int main( int argc, char* argv[] ) {
-    QApplication    app( argc, argv );
-    ToolBox algo_visualizer;
-    algo_visualizer.show();
+    QApplication app( argc, argv );
+    ToolBox      tool_box;
+    tool_box.show();
     return QApplication::exec();
 }
